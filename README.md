@@ -16,22 +16,22 @@ We decided to implement this feature for our clients and we are calling it the A
 
 ## Product Requirements
 
-- [ ] I want to see a list of absences including the names of the employees. xxxxx
-- [ ] I want to see the first 10 absences, with the ability to paginate. xxxxx
-- [ ] I want to see a total number of absences.  xxxxxx
-- [ ] For each absence I want to see: xxxxxxxx
-  - [ ] Member name
-  - [ ] Type of absence
-  - [ ] Period
-  - [ ] Member note (when available)
-  - [ ] Status (can be 'Requested', 'Confirmed' or 'Rejected')
-  - [ ] Admitter note (when available) xxxxxxxxxxx
-- [ ] I want to filter absences by type.
-- [ ] I want to filter absences by date.
-- [ ] I want to see a loading state until the list is available. xxxxxxxxxx
-- [ ] I want to see an error state if the list is unavailable. xxxxxxxxxxxx
-- [ ] I want to see an empty state if there are no results.   xxxxxxxxxxxx
-- [ ] (Bonus) I can generate an iCal file and import it into outlook.
+- [X] I want to see a list of absences including the names of the employees.
+- [X] I want to see the first 10 absences, with the ability to paginate.
+- [X] I want to see a total number of absences. 
+- [X] For each absence I want to see:
+  - [X] Member name
+  - [X] Type of absence
+  - [X] Period
+  - [X] Member note (when available)
+  - [X] Status (can be 'Requested', 'Confirmed' or 'Rejected')
+  - [X] Admitter note (when available)
+- [X] I want to filter absences by type.
+- [X] I want to filter absences by date.
+- [X] I want to see a loading state until the list is available. 
+- [X] I want to see an error state if the list is unavailable.
+- [X] I want to see an empty state if there are no results. 
+- [X] (Bonus) I can generate an iCal file and import it into outlook.
 
 ## Your Mission
 
@@ -66,29 +66,4 @@ Optional: build the project and deploy (ie make it available as a static project
 - Please complete your working solution within 7 days of receiving this challenge.
 - Whenever you're done please deliver the project following the instructions below.
 
-We'll review your submission as soon as possible. Key-points we're going to review:
 
-- Naming (files, functions, components, ...).
-- Tests.
-- Code structure, readability, performance and consistency.
-- function lengths.
-- Commits + commit messages.
-- Clean code.
-- Good documentation and README instructions.
-
-An essential part of the challenge is also coming up with your own solutions and making reasonable assumptions about the implementation of the acceptance criteria.
-
-## Project delivery instructions
-
-To submit the project for evaluation please follow the steps below:
-
-- Create a **public** repo on your personal Github.
-- Add the new repo as a _remote_ on your local repo.
-- Push your code to your new remote repo.
-- Send us the link! The e-mail is: challenge@crewmeister.com
-
-## That's it!
-
-Happy coding!
-
-<img src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" data-canonical-src="https://user-images.githubusercontent.com/5693916/30273942-84252588-96fb-11e7-9420-5516b92cb1f7.gif" width="150" height="150" />
