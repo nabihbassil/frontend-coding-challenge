@@ -62,6 +62,6 @@ Optional: build the project and deploy (ie make it available as a static project
 -Open a terminal in the server folder and run npm start.
 -Open a terminal in the client folder and run npm start.
 -A tab should automatically open in your browser of choice.
--If not open http://localhost:3000 and the main page should load.
+-If not, open http://localhost:3000 and the main page should load.
 
 
