@@ -58,12 +58,10 @@ Optional: build the project and deploy (ie make it available as a static project
 
 ## Instructions
 
-- Clone this repo.
-- The challenge is on!
-- Build a performant, clean and well-structured solution.
-- Commit early and often. We want to be able to check your progress.
-- Include a README with instructions on how to run your project.
-- Please complete your working solution within 7 days of receiving this challenge.
-- Whenever you're done please deliver the project following the instructions below.
+-Go to both folders client and server and do npm install.
+-Open a terminal in the server folder and run npm start.
+-Open a terminal in the client folder and run npm start.
+-A tab should automatically open in your browser of choice.
+-If not open localhost:3000 and the main page should load.
 
 
