@@ -33,14 +33,13 @@ export default class MainTable extends Component {
         var placeholder = JSON.stringify(data);
         var finalholder = JSON.parse(placeholder);
         $(document).ready(function () {;
-        var table = $('#example').DataTable({
+         $('#example').DataTable({
              scrollY: 700, //table height
             scrollX: true, //table width
             scrollCollapse: true, //force the height of the table's viewport to the given height
             "data": finalholder, 
             "initComplete": function (settings, json) { // when table is fully loaded
               $( "#MainDiv" ).removeClass( "fade-out" ).addClass( "fade-in" );
-              table = settings.oInstance.api(); // creates table variable
               $($.fn.dataTable.tables(true)).DataTable().columns.adjust(); //adjusts column size
             },
             rowId: function (a) {
@@ -110,9 +109,12 @@ export default class MainTable extends Component {
      }
 
       render(){
+        const mystyle = {
+          marginTop: "5em"
+        };
       return (
         <> 
-        <div id="MainDiv">
+        <div id="MainDiv" style={mystyle}>
           <div className="jumbotron text-center bg-sky">
           </div>
           

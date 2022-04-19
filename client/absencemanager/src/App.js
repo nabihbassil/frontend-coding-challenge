@@ -3,10 +3,8 @@ import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import MainTable from './components/MainTable.js';
 import Logout from './components/Logout.js';
 import DescriptionPage from "./components/DescriptionPage.js";
-import './App.css'
-import exitLogo from "./imgs/logout.png"
-import tableLogo from "./imgs/sheet.png"
-
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import './App.css';
 export default class App extends Component {
     componentDidMount() {
         document.title = "Absence Manager";
@@ -14,33 +12,26 @@ export default class App extends Component {
 
     render() {
 
-        const mystyle = {
-            display: "flex",
-            justifyContent: "space-around",
-            marginBottom: "6em"
-          };
+        const titleStyle = {
+            color: "white",
+        };
+        const linkStyle = {
+            color: "grey",
+        };
 
         return (
             <BrowserRouter>
                 <>
-                <div id="wrapper" style={mystyle}>
-                    <div>
-                        <Link to="/absences">
-                        <img src={tableLogo} alt={"exitLogo"} />
-                        </Link>
-                    </div>
-                    <div>
-                    <Link to="/">
-                    <h1 id="title">Absence Manager</h1>
-                        </Link>
-                        
-                    </div>
-                    <div>
-                    <Link to="/logout">
-                    <img src={exitLogo} alt={"exitLogo"} />
-                        </Link>
-                    </div>
-                    </div>
+
+                    <Navbar bg="dark" variant="dark">
+                        <Container>
+                            <Navbar.Brand ><Link to="/" style={titleStyle}> Absence Manager </Link></Navbar.Brand>
+                            <Nav className="me-auto">
+                                <Nav.Link ><Link to="/absences" style={linkStyle}>Table </Link></Nav.Link>
+                                <Nav.Link ><Link to="/logout" style={linkStyle}>Close</Link></Nav.Link>
+                            </Nav>
+                        </Container>
+                    </Navbar>
 
                 </>
                 <Switch>
